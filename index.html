@@ -13,12 +13,19 @@ body {
   background-color: #fdfdfd;
   color: #333;
 }
-
+.introcontactsection{
+  display: flex;
+  justify-content: flex-end;
+}
 .contact_info {
   color: #adadad;
   text-align: right;
+  width: 100%;
 }
-
+.contact_list{
+  text_align: left;
+  list_style: none;
+}
     
 h1, h3 {
   text-align: left;
@@ -37,12 +44,20 @@ h1, h3 {
 
   <p>After undergrad, I plan on pursuing a doctoral program in engineering to facilitate my career goal of becoming a professor/researcher specializing in the field of nuclear fusion, particularly in examining the structural integrity and deformation of various materials within reaction chambers. My previous background in the education sector ignited my passion for the intersection between teaching and engineering, and what it would mean to mentor students with similar backgrounds to my own to hopefully increase STEM retention in the Latine student population.</p>
 
-  <p class="contact_info">Contact me</p>
-  <ul>
+
+<section class = "introcontactsection">
+  <div class = "introcontacttext">
+    
+  <p class="contact_info"><strong>Contact Me</strong></p>
+  <ul class="contact_list">
     <li>Email: rcast0825@ucla.edu</li>
     <li>Phone Number: (661)208-6185</li>
     <li><a href="https://www.linkedin.com/in/robert-xavier-castillo-casta%C3%B1aza/">LinkedIn</a></li>
   </ul>
-  
+  </div> 
+</section>
+
+
+    
 </body>
 </html>
