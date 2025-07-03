@@ -85,12 +85,28 @@ h1, h3 {
     height: 50px;
     align-items: center;
     padding-left: 15px;
+    justify-content: space-between;
 }
 
 .pageheader h1{
     margin: 0;
     padding: 0;
     line-height: 1;
+}
+
+.navlinks{
+    display: flex;
+    gap: 40px;
+    font-weight: bold;
+    align-items: flex-end;
+}
+
+.navlinks a {
+color: #fdfdfd;
+align-items: flex-end;
+margin-right: 15px;
+
+
 }
 
 @media (max-width: 700px) {
@@ -126,13 +142,18 @@ h1, h3 {
 <section class="top">
     <div class="pageheader">
         <h1>Robert Xavier Castillo Castañaza</h1>
+        <nav class="navlinks">
+            <a href="index.html">Home</a>
+            <a href="resume.html">Resume</a>
+            <a href="resume.html">Research and Projects</a>
+        </nav>  
     </div>
 </section>
 
 <section class="introsection">
 <div class="introflexcontainer">
     <div class="introimg">
-        <img class="headshotimage" src="/images/IMG_9539-modified.png" alt="Robert Xavier Castillo Castañaza's headshot.">
+        <img class="headshotimage" src="images/IMG_9539-modified.png" alt="Robert Xavier Castillo Castañaza's headshot.">
         <div class = "contacttext">
             <ul class="contact_list">
                 <li><strong>Email:</strong> rcast0825@ucla.edu</li>
