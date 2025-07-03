@@ -5,57 +5,58 @@
   <meta name="viewport" content="width=device-width" />
   <title>Robert C.'s Personal Site</title>
   <style>
-  body {
-    font-family: Tahoma, sans-serif;
-    margin: 0;
-    padding: 20px;
-    line-height: 1.6;
-    background-color: #fdfdfd;
-    color: #333;
-  }
+body {
+  font-family: Tahoma, sans-serif;
+  margin: 0;
+  padding: 20px;
+  line-height: 1.6;
+  background-color: #fdfdfd;
+  color: #333;
+}
 
-  h1, h3 {
-    text-align: center;
-  }
+h1, h3 {
+  text-align: center;
+}
 
+.about-container {
+  display: flex;
+  align-items: flex-start; /* top alignment */
+  gap: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 30px;
+  flex-wrap: wrap;
+}
+
+.about-container img {
+  width: 350px; /* bigger */
+  height: auto;
+  border-radius: 16px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.text {
+  flex: 1;
+  max-width: 600px;
+}
+
+@media (max-width: 800px) {
   .about-container {
-    display: flex;
-    align-items: flex-start; /* Align image with top of text */
-    gap: 40px;
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 30px;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
   }
 
   .about-container img {
-    width: 300px;
-    height: auto;
-    border-radius: 16px;
-    object-fit: cover;
-    flex-shrink: 0;
+    width: 250px;
   }
 
   .text {
-    flex: 1;
-    max-width: 600px;
+    max-width: none;
+    text-align: center;
   }
+}
 
-  @media (max-width: 800px) {
-    .about-container {
-      flex-direction: column;
-      align-items: center;
-    }
-
-    .about-container img {
-      width: 200px;
-    }
-
-    .text {
-      max-width: none;
-      text-align: center;
-    }
-  }
 </style>
 
 </head>
