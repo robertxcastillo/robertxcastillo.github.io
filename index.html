@@ -13,53 +13,91 @@ body {
   background-color: #fdfdfd;
   color: #000000;
 }
-.introcontactsection{
+.AboutMeHeader{
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.introflexcontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    gap: 50px;
+}
+
+.introimg{
   display: flex;
-  justify-content: flex-end;
+  flex-direction: column;
+  align-items: center;
+  width: 250px;
 }
-.introcontacttext{
-  max-width: 300px;
+
+.headshotimage {
+  width: 200px;
+  border-radius: 12px;
+  margin-bottom: 15px;
 }
-.contact_info {
-  color: #adadad;
+
+.contacttext {
+  background-color: #0b1982;
+  padding: 5px;
+  border-radius: 25px;
+  width: auto;
+  text-align: center;
+
+  color: #fdfdfd;
+  font-size: 14px;
+}
+
+.contacttext a {
+  padding: px;
+  border-radius: 50px;
+  width: auto;
   text-align: center;
   width: 100%;
+  color: #fdfdfd;
+  font-size: 14px;
 }
-.contact_list{
+
+
+.contact_list {
+  padding: 0px;
+  border-radius: 0px;
   text-align: left;
-  list-style: none;
+  width: 100%;
 }
-    
+
+.introrightcolumn {
+  flex: 1;
+  max-width: 600px;
+}
+
 h1, h3 {
   text-align: left;
 }
 </style>
 </head>
 
+<h1>Robert Xavier Castillo Castañaza</h1>
 
-  <h1>Robert Xavier Castillo Castañaza</h1>
-
-  <h3>About Me</h3>
-  <!-- <img src="images/HomepageHeadshot.JPG" alt="Robert Xavier Castillo Castañaza's headshot."> -->
-  <p>Hello! I am a rising third-year Mechanical Engineering student at the University of California, Los Angeles. I am a first-generation Latino student deeply passionate about the intersections between engineering and education that could serve the immigrant working-class populations of California's Central Valley, where I hail from (Bakersfield, CA). I currently conduct research within the Nanoscale Transport Research Group (NTRG), under the direction of Dr. Timothy Fisher, that examines the elastic and tensile stress behavior of graphite-based      carbon-carbon composites generated via methane photothermal decomposition. Additionally, I assist the UCLA Center for the Transformation of Schools as a member of the Operations team that provides administrative services for the Center's many education research projects.    </p>
-
-  <p>Recently, I was accepted into the UC LEADS program, which grants historically underrepresented students within STEM undergraduate programs a pathway into higher education through instructional programming designed to cultivate successful practices in oral presentations, paper writing, and experimentation. Through this program, and Summer Programs in Undergraduate Research (SPUR), I will conduct research with NTRG for the Summer 2025 season to continue my primary research focus and investigate brand new directions for the project that blend indigenous Mayan weaving practices into the carbon composite manufacturing process.</p>
-
-  <p>After undergrad, I plan on pursuing a doctoral program in engineering to facilitate my career goal of becoming a professor/researcher specializing in the field of nuclear fusion, particularly in examining the structural integrity and deformation of various materials within reaction chambers. My previous background in the education sector ignited my passion for the intersection between teaching and engineering, and what it would mean to mentor students with similar backgrounds to my own to hopefully increase STEM retention in the Latine student population.</p>
-
-
-<section class = "introcontactsection">
-  <div class = "introcontacttext">
-    <p class="contact_info"><strong>Contact Me</strong></p>
-    <ul class="contact_list">
-      <li><strong>Email:</strong> rcast0825@ucla.edu</li>
-      <li><strong>Phone Number:</strong> (661)208-6185</li>
-      <li><a href="https://www.linkedin.com/in/robert-xavier-castillo-casta%C3%B1aza/">LinkedIn</a></li>
-    </ul>
-  </div> 
+<section class="introsection">
+<div class="introflexcontainer">
+    <div class="introimg">
+        <img class="headshotimage" src="images/IMG_9539-modified.png" alt="Robert Xavier Castillo Castañaza's headshot.">
+        <div class = "contacttext">
+            <ul class="contact_list">
+                <li><strong>Email:</strong> rcast0825@ucla.edu</li>
+                <li><strong>Phone Number:</strong> (661)208-6185</li>
+                <li><a href="https://www.linkedin.com/in/robert-xavier-castillo-casta%C3%B1aza/">LinkedIn</a></li>
+            </ul>
+        </div>   
+    </div>
+    <div class="introrightcolumn">
+        <h3 class="AboutMeHeader">About Me</h3>
+        <p class="introtext">Hello! I am a rising third-year Mechanical Engineering student at the University of California, Los Angeles. I am a first-generation Latino student deeply passionate about the intersections between engineering and education that could serve the immigrant working-class populations of California's Central Valley. I currently conduct research within the Nanoscale Transport Research Group (NTRG), under the direction of Dr. Timothy Fisher, that examines the elastic and tensile stress behavior of graphite-based      carbon-carbon composites generated via methane photothermal decomposition. Additionally, I assist the UCLA Center for the Transformation of Schools as a member of the Operations team that provides administrative services for the Center's many education research projects. After undergrad, I plan on pursuing a doctoral program in engineering to facilitate my career goal of becoming a professor/researcher specializing in the field of nuclear fusion, particularly in examining the structural integrity and deformation of various materials within reaction chambers.</p>
+    </div>
+</div>
 </section>
 
-
-    
-</body>
-</html>
