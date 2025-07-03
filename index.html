@@ -26,7 +26,7 @@ h1, h3 {
   <h3>About Me</h3>
 
   
-<div>
+<div class="flex_container">
   <img src="images/HomepageHeadshot.JPG" alt="Robert Xavier Castillo Castañaza's headshot.">
   <span>
      <p>Hello! I am a rising third-year Mechanical Engineering student at the University of California, Los Angeles. I am a first-generation, Latino student
@@ -42,11 +42,9 @@ h1, h3 {
   </span>
 </div>
 
-img, span {
-    display: inline-block; /* Or display: inline; for basic cases */
-    vertical-align: top;
-}  
-
-  
+.flex-container {
+    display: flex;
+    align-items: flex-start; /* Aligns items to the top */
+}
 </body>
 </html>
