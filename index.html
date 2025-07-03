@@ -77,6 +77,34 @@ body {
 h1, h3 {
   text-align: left;
 }
+
+@media (max-width: 700px) {
+  .introflexcontainer {
+    flex-direction: column;
+    align-items: center; /* center items when stacked */
+    gap: 20px; /* less gap on mobile */
+  }
+  
+  .introimg {
+    width: 100%;      /* full width on mobile */
+    max-width: 300px; /* limit max width */
+  }
+
+  .introrightcolumn {
+    max-width: 100%; /* let intro text fill width */
+    padding: 0 10px; /* add some side padding */
+    text-align: left; /* optional: center text on mobile */
+  }
+
+  .contacttext {
+    width: 100%;  /* make contact box full width */
+  }
+
+  .contact_list {
+    text-align: center; /* center contact list items on mobile */
+  }
+}
+    
 </style>
 </head>
 
